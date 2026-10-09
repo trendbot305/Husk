@@ -6,6 +6,10 @@ on:
     branches:
       - fix/spiderman-opensles-diagnostics
 
+concurrency:
+  group: spiderman-diagnostic-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: macos-15
