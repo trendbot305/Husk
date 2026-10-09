@@ -22,8 +22,15 @@ jobs:
           submodules: recursive
       - name: Install build tools
         run: |
-          brew install meson ninja pkg-config xcodegen rust cmake automake autoconf libtool nasm
-          rustup target add aarch64-apple-ios
+          brew install meson ninja pkg-config xcodegen cmake automake autoconf libtool nasm
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+          rustup target add aarch64-apple-ios --toolchain stable
+          which rustc cargo rustup
+          rustc --version
+          cargo --version
+          rustup target list --installed
+          test -f "$(rustc --print sysroot)/lib/rustlib/aarch64-apple-ios/lib/libcore-"*".rlib"
           /opt/homebrew/bin/python3 -m pip install --break-system-packages PyYAML
       - name: Cache build dependencies
         uses: actions/cache@v4
