@@ -2,6 +2,9 @@ name: Husk Spider-Man diagnostic IPA
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - fix/spiderman-opensles-diagnostics
 
 jobs:
   build:
