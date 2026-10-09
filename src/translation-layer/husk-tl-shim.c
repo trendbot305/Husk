@@ -906,11 +906,39 @@ static int __android_log_vprint_shim(int prio, const char *tag, const char *fmt,
     return 1;
 }
 
+/* OpenSL ES data exports for the legacy translation-layer loader.
+ * OpenSL ES exposes SL_IID_* as pointer-valued DATA symbols, not functions.
+ * Keep these identifiers in stable storage. This only unblocks relocation:
+ * the legacy runtime still needs slCreateEngine and audio interfaces.
+ */
+typedef struct {
+    uint32_t time_low;
+    uint16_t time_mid, time_hi, clock;
+    uint8_t node[6];
+} tl_legacy_sl_iid;
+
+static const tl_legacy_sl_iid k_legacy_sl_engine = { 0x8d97c260, 0xddd4, 0x11db, 0x958f, { 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b } };
+static const tl_legacy_sl_iid k_legacy_sl_play = { 0xef0bd9c0, 0xddd7, 0x11db, 0xbf49, { 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b } };
+static const tl_legacy_sl_iid k_legacy_sl_bq = { 0x2bc99cc0, 0xddd4, 0x11db, 0x8d99, { 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b } };
+static const tl_legacy_sl_iid k_legacy_sl_volume = { 0x09e8ede0, 0xddde, 0x11db, 0xb4f6, { 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b } };
+static const tl_legacy_sl_iid k_legacy_sl_asbq = { 0x198e4940, 0xc5d7, 0x11dd, 0xad8b, { 0x00, 0x02, 0xa5, 0xd5, 0xc5, 0x1b } };
+static const tl_legacy_sl_iid *const k_legacy_sl_engine_ptr = &k_legacy_sl_engine;
+static const tl_legacy_sl_iid *const k_legacy_sl_play_ptr = &k_legacy_sl_play;
+static const tl_legacy_sl_iid *const k_legacy_sl_bq_ptr = &k_legacy_sl_bq;
+static const tl_legacy_sl_iid *const k_legacy_sl_volume_ptr = &k_legacy_sl_volume;
+static const tl_legacy_sl_iid *const k_legacy_sl_asbq_ptr = &k_legacy_sl_asbq;
+
 void *tl_shim_find(const char *name)
 {
     if (!name) {
         return NULL;
     }
+    /* Export the address of the pointer variable, matching Android libOpenSLES. */
+    if (!strcmp(name, "SL_IID_ENGINE")) return (void *)&k_legacy_sl_engine_ptr;
+    if (!strcmp(name, "SL_IID_PLAY")) return (void *)&k_legacy_sl_play_ptr;
+    if (!strcmp(name, "SL_IID_BUFFERQUEUE")) return (void *)&k_legacy_sl_bq_ptr;
+    if (!strcmp(name, "SL_IID_VOLUME")) return (void *)&k_legacy_sl_volume_ptr;
+    if (!strcmp(name, "SL_IID_ANDROIDSIMPLEBUFFERQUEUE")) return (void *)&k_legacy_sl_asbq_ptr;
     for (size_t i = 0; i < sizeof(g_exports) / sizeof(g_exports[0]); i++) {
         if (!strcmp(g_exports[i].name, name) && g_exports[i].addr) {
             return g_exports[i].addr;
