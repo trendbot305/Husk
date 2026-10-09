@@ -1,0 +1,42 @@
+name: Husk Spider-Man diagnostic IPA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 360
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Install build tools
+        run: |
+          brew install meson ninja pkg-config xcodegen rust cmake automake autoconf libtool nasm
+          rustup target add aarch64-apple-ios
+      - name: Cache build dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            build/ios-arm64
+            build/sources
+          key: husk-ios-deps-${{ runner.os }}-${{ hashFiles('scripts/fetch_sources.sh', 'scripts/build_ios.sh', 'scripts/build_angle_ios.sh', 'scripts/build_moltenvk_ios.sh') }}
+          restore-keys: |
+            husk-ios-deps-${{ runner.os }}-
+      - name: Build diagnostic IPA
+        run: |
+          chmod +x scripts/ci_build.sh
+          ./scripts/ci_build.sh build/Husk-Spiderman-Diagnostic.ipa
+      - name: Upload IPA and build outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Husk-Spiderman-Diagnostic
+          path: |
+            build/Husk-Spiderman-Diagnostic.ipa
+            build/Husk-Spiderman-Diagnostic.tipa
+          if-no-files-found: warn
+          retention-days: 7
