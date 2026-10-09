@@ -1,12 +1,103 @@
 Husk Spider-Man diagnostic build failure
-Run: https://github.com/trendbot305/Husk/actions/runs/37962035826
-Commit: 905357b4270005f26e9b63bc890ab1dd60a5e7da
-Date (UTC): 2026-10-09T17:05:34Z
+Run: https://github.com/trendbot305/Husk/actions/runs/37964226106
+Commit: 6367ac44524b9a3580e6429a8955abb5aab558d3
+Date (UTC): 2026-10-09T17:33:50Z
 
 === Recent compiler and build errors ===
-error: could not compile `cfg-if` (lib) due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `libc` (lib) due to 1 previous error
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:95: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:89: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:29: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:41:44: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:39: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:35: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:61:38: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:48: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:48: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:270: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:48: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:48: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:312: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:402: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:40: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:59: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:59: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:188: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:261: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:77:54: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:77:54: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:58: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:58: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:147: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:98: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:113: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:181: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:33: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:26: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:24: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:115: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:71: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:107: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:63: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:31: error: 'nonisolated' cannot be applied to mutable stored properties
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:41:39: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:61:33: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:222: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:282: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:253: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:251: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:351: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:293: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:414: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:385: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:49: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:227: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:169: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:48: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:125: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:81: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:44: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:193: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:164: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: an enum with no cases cannot declare a raw type
+** BUILD FAILED **
+build failed; refusing to package a stale app
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:31: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:36: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:88: error: expected type
 Dependency sysprof-capture-4 for host machine from subproject sysprof found: NO (subproject failed to configure)
    78 |   "internal error: unexpected repeat\0"
    78 |   "internal error: unexpected repeat\0"
@@ -15,166 +106,166 @@ clang: error: unsupported option '-print-multi-os-directory'
 clang: error: no input files
 
 === Last 160 lines of build output ===
-[33m▸[0m [39;1mCompiling[0m MVKBlockObserver.m
-[33m▸[0m [39;1mCompiling[0m MVKBaseObject.mm
-[33m▸[0m [39;1mCompiling[0m MTLSamplerDescriptor+MoltenVK.m
-[33m▸[0m [39;1mCompiling[0m MTLRenderPipelineDescriptor+MoltenVK.m
-[33m▸[0m [39;1mCompiling[0m CAMetalLayer+MoltenVK.mm
-[33m▸[0m [39;1mBuilding library[0m libMoltenVK.a
-[33m▸[0m [39;1mRunning script[0m 'Copy to Staging'
-[33m▸[0m [39;1mRunning script[0m 'Clean Dynamic'
-[33m▸[0m [39;1mProcessing[0m empty-MoltenVK.plist
-[33m▸[0m [39;1mLinking[0m MoltenVK
-[33m▸[0m [39;1mRunning script[0m 'Copy to Staging'
-[33m▸[0m [39;1mTouching[0m MoltenVK.framework (in target 'MoltenVK-iOS-dynamic' from project 'MoltenVK')
-[33m▸[0m [39;1mRunning script[0m 'Package MoltenVK'
-[33m▸[0m [39;1mBuild[0m Succeeded
-==> /Users/runner/work/Husk/Husk/build/ios-arm64/lib/MoltenVK.xcframework
-
-[1;34m##### on-device pairing (Rust)[0m
-    Updating crates.io index
- Downloading crates ...
-  Downloaded spin v0.9.9
-  Downloaded rustc_version v0.4.1
-  Downloaded pkcs8 v0.10.2
-  Downloaded deranged v0.5.8
-  Downloaded ppv-lite86 v0.2.21
-  Downloaded const-oid v0.9.6
-  Downloaded libm v0.2.16
-  Downloaded untrusted v0.9.0
-  Downloaded time v0.3.55
-  Downloaded zmij v1.0.23
-  Downloaded block-buffer v0.10.4
-  Downloaded x25519-dalek v2.0.1
-  Downloaded chacha20poly1305 v0.10.1
-  Downloaded futures-util v0.3.34
-  Downloaded universal-hash v0.5.1
-  Downloaded cbc v0.1.2
-  Downloaded rand v0.10.3
-  Downloaded syn v2.0.119
-  Downloaded syn v3.0.6
-  Downloaded zeroize v1.9.0
-  Downloaded base64 v0.23.1
-  Downloaded autocfg v1.5.1
-  Downloaded cc v1.6.0
-  Downloaded socket2 v0.6.5
-  Downloaded powerfmt v0.2.0
-  Downloaded thiserror v2.0.21
-  Downloaded tokio-macros v2.7.2
-  Downloaded chacha20 v0.9.1
-  Downloaded der v0.7.10
-  Downloaded signature v2.2.0
-  Downloaded zeroize_derive v1.5.0
-  Downloaded base64ct v1.8.3
-  Downloaded getrandom v0.4.3
-  Downloaded tracing-core v0.1.36
-  Downloaded typenum v1.20.1
-  Downloaded plist-macro v0.1.6
-  Downloaded futures-channel v0.3.34
-  Downloaded pin-project-lite v0.2.17
-  Downloaded sha1 v0.10.7
-  Downloaded unicode-ident v1.0.26
-  Downloaded cpufeatures v0.2.17
-  Downloaded itoa v1.0.18
-  Downloaded rand_core v0.10.1
-  Downloaded equivalent v1.0.2
-  Downloaded futures-core v0.3.34
-  Downloaded futures-sink v0.3.34
-  Downloaded hashbrown v0.17.1
-  Downloaded memchr v2.8.3
-  Downloaded rand_chacha v0.3.1
-  Downloaded siphasher v1.0.4
-  Downloaded ed25519-dalek v2.2.0
-  Downloaded hmac v0.12.1
-  Downloaded smallvec v1.16.2
-  Downloaded subtle v2.6.1
-  Downloaded cfg-if v1.0.5
-  Downloaded tokio v1.53.1
-  Downloaded uuid v1.27.0
-  Downloaded block-padding v0.3.3
-  Downloaded chacha20 v0.10.2
-  Downloaded generic-array v0.14.7
-  Downloaded num-integer v0.1.47
-  Downloaded time-core v0.1.9
-  Downloaded version_check v0.9.5
-  Downloaded zerocopy v0.8.59
-  Downloaded tokio-rustls v0.26.6
-  Downloaded tracing v0.1.44
-  Downloaded cipher v0.4.4
-  Downloaded digest v0.10.7
-  Downloaded ed25519 v2.2.3
-  Downloaded futures-executor v0.3.34
-  Downloaded futures-io v0.3.34
-  Downloaded idevice-srp v0.6.0
-  Downloaded rustls-webpki v0.103.15
-  Downloaded sha2 v0.10.9
-  Downloaded aead v0.5.2
-  Downloaded aes v0.8.4
-  Downloaded hkdf v0.12.4
-  Downloaded lazy_static v1.5.1
-  Downloaded md-5 v0.10.6
-  Downloaded plist v1.10.1
-  Downloaded rand_core v0.6.4
-  Downloaded serde v1.0.229
-  Downloaded serde_core v1.0.229
-  Downloaded slab v0.4.12
-  Downloaded indexmap v2.14.2
-  Downloaded once_cell v1.21.4
-  Downloaded poly1305 v0.8.0
-  Downloaded pkcs1 v0.7.5
-  Downloaded serde_derive v1.0.229
-  Downloaded shlex v2.0.1
-  Downloaded thiserror-impl v2.0.21
-  Downloaded base64 v0.22.1
-  Downloaded num-conv v0.2.2
-  Downloaded num-bigint v0.4.8
-  Downloaded rand v0.8.8
-  Downloaded serde_json v1.0.151
-  Downloaded opaque-debug v0.3.1
-  Downloaded spki v0.7.3
-  Downloaded async-stream v0.3.6
-  Downloaded async-stream-impl v0.3.6
-  Downloaded tracing-attributes v0.1.31
-  Downloaded proc-macro2 v1.0.107
-  Downloaded semver v1.0.28
-  Downloaded base64 v0.21.7
-  Downloaded bytes v1.12.1
-  Downloaded curve25519-dalek v4.1.3
-  Downloaded find-msvc-tools v0.1.14
-  Downloaded futures-macro v0.3.34
-  Downloaded getrandom v0.2.17
-  Downloaded rsa v0.9.10
-  Downloaded inout v0.1.4
-  Downloaded num-iter v0.1.46
-  Downloaded futures-task v0.3.34
-  Downloaded pem-rfc7468 v0.7.0
-  Downloaded rustls-pki-types v1.15.1
-  Downloaded crypto-common v0.1.7
-  Downloaded time-macros v0.2.32
-  Downloaded futures v0.3.34
-  Downloaded idevice v0.1.68
-  Downloaded num-bigint-dig v0.8.6
-  Downloaded num-traits v0.2.19
-  Downloaded libc v0.2.190
-  Downloaded mio v1.2.3
-  Downloaded quick-xml v0.42.0
-  Downloaded rustls v0.23.45
-  Downloaded ring v0.17.14
-  Downloaded quote v1.0.47
-   Compiling proc-macro2 v1.0.107
-   Compiling unicode-ident v1.0.26
-   Compiling quote v1.0.47
-   Compiling libc v0.2.190
-   Compiling cfg-if v1.0.5
-error[E0463]: can't find crate for `core`
-  |
-  = note: the `aarch64-apple-ios` target may not be installed
-  = help: consider downloading the target with `rustup target add aarch64-apple-ios`
-
-For more information about this error, try `rustc --explain E0463`.
-error: could not compile `cfg-if` (lib) due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `libc` (lib) due to 1 previous error
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:58: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:147: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:98: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:113: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:181: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:33: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:26: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:24: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:115: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:71: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:107: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:63: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:31: error: 'nonisolated' cannot be applied to mutable stored properties
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:41:39: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:61:33: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:222: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:282: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:253: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:251: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:351: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:293: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:414: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:385: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:49: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:227: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:169: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:48: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:125: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:81: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:44: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:193: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:164: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: an enum with no cases cannot declare a raw type
+/Users/runner/work/Husk/Husk/src/app/HuskJITHelper/HuskJITHelper.swift:3:8: error: failed to build module 'StikJIT'; this SDK is not supported by the compiler (the SDK is built with 'Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)', while this compiler is 'Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)'). Please select a toolchain which matches the SDK.
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:31: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:36: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:88: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:103: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:41: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:41: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:80: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:95: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:89: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:90: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:29: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:41:44: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:39: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:35: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:61:38: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:48: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:48: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:270: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:48: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:48: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:312: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:402: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:40: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:73:41: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:59: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:59: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:188: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:261: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:262: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:77:54: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:77:54: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:58: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:58: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:147: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:148: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:59: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:98: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:113: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:54: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:181: error: expected type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:33: error: expected '{' in enum
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:26: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:24: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:115: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:71: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:107: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:28:63: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:30:31: error: 'nonisolated' cannot be applied to mutable stored properties
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:35:24: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:41:39: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:45:34: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:53:30: error: an enum with no cases cannot declare a raw type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:61:33: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:222: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:282: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:71:253: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:43: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:70: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:251: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:351: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:293: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:414: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:72:385: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:49: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:227: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:76:169: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:78:48: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:125: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:80:81: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:44: error: cannot find type 'Foundation' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:193: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:81:164: error: @escaping attribute only applies to function types
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: cannot find type 'Swift' in scope
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:83:28: error: an enum with no cases cannot declare a raw type
+** BUILD FAILED **
+build failed; refusing to package a stale app
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:12:31: error: expected '{' in struct
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected dictionary value type
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:36: error: unexpected ':' in type; did you mean to write a dictionary type?
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: consecutive declarations on a line must be separated by ';'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:23:37: error: expected declaration
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:26:34: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected ',' separator
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:49: error: expected parameter name followed by ':'
+/tmp/husk_ipa/Build/Products/Release-iphoneos/StikJIT.framework/Modules/StikJIT.swiftmodule/arm64-apple-ios.private.swiftinterface:27:88: error: expected type
 
 === Last 100 lines of ANGLE output (if available) ===
     Using response file: /Users/runner/Library/Developer/Xcode/DerivedData/ANGLE-aysmqnpyynxcdbezcfkucyzoildk/Build/Intermediates.noindex/ArchiveIntermediates/ANGLE/IntermediateBuildFilesPath/ANGLE.build/Release-iphoneos/ANGLE (dynamic).build/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
@@ -266,13 +357,13 @@ warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu
 note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'ANGLE' from project 'ANGLE')
 warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'Setup' from project 'ANGLE')
 note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'Setup' from project 'ANGLE')
+warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'ANGLEMetalLib' from project 'ANGLE')
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'ANGLEMetalLib' from project 'ANGLE')
+warning: unexpected mutating task ('SetOwnerAndGroup runner:staff /Users/runner/Library/Developer/Xcode/DerivedData/ANGLE-aysmqnpyynxcdbezcfkucyzoildk/Build/Intermediates.noindex/ArchiveIntermediates/ANGLE/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/ANGLEMetalLib.metallib') with no relation to prior mutator ('MetalLink /Users/runner/Library/Developer/Xcode/DerivedData/ANGLE-aysmqnpyynxcdbezcfkucyzoildk/Build/Intermediates.noindex/ArchiveIntermediates/ANGLE/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/ANGLEMetalLib.metallib') (in target 'ANGLEMetalLib' from project 'ANGLE')
 warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'translator' from project 'ANGLE')
 note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'translator' from project 'ANGLE')
 warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'ANGLETranslatorFuzzer' from project 'ANGLE')
 note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'ANGLETranslatorFuzzer' from project 'ANGLE')
-warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'ANGLEMetalLib' from project 'ANGLE')
-note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'ANGLEMetalLib' from project 'ANGLE')
-warning: unexpected mutating task ('SetOwnerAndGroup runner:staff /Users/runner/Library/Developer/Xcode/DerivedData/ANGLE-aysmqnpyynxcdbezcfkucyzoildk/Build/Intermediates.noindex/ArchiveIntermediates/ANGLE/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/ANGLEMetalLib.metallib') with no relation to prior mutator ('MetalLink /Users/runner/Library/Developer/Xcode/DerivedData/ANGLE-aysmqnpyynxcdbezcfkucyzoildk/Build/Intermediates.noindex/ArchiveIntermediates/ANGLE/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/ANGLEMetalLib.metallib') (in target 'ANGLEMetalLib' from project 'ANGLE')
 warning: can't find additional SDK '/Users/runner/work/Husk/Husk/third_party/gpu/webkit/WebKitLibraries/SDKs/iphoneos18.0-additions.sdk' (in target 'ANGLE (dynamic)' from project 'ANGLE')
 note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'ANGLE (dynamic)' from project 'ANGLE')
 ** ARCHIVE SUCCEEDED **
