@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-15
     timeout-minutes: 360
     permissions:
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,7 +32,9 @@ jobs:
       - name: Build diagnostic IPA
         run: |
           chmod +x scripts/ci_build.sh
-          ./scripts/ci_build.sh build/Husk-Spiderman-Diagnostic.ipa
+          mkdir -p build/logs
+          set -o pipefail
+          ./scripts/ci_build.sh build/Husk-Spiderman-Diagnostic.ipa 2>&1 | tee build/logs/ci-full.log
       - name: Upload IPA and build outputs
         if: always()
         uses: actions/upload-artifact@v4
@@ -43,3 +45,45 @@ jobs:
             build/Husk-Spiderman-Diagnostic.tipa
           if-no-files-found: warn
           retention-days: 7
+      - name: Publish failure report to build-reports branch
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/logs
+          REPORT=build/logs/spiderman-failure-report.txt
+          {
+            echo "Husk Spider-Man diagnostic build failure"
+            echo "Run: https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+            echo "Commit: ${GITHUB_SHA}"
+            echo "Date (UTC): $(date -u +%FT%TZ)"
+            echo
+            echo "=== Recent compiler and build errors ==="
+            grep -hEi 'error:|fatal error:|failed|undefined symbol|no such file|exit code' build/logs/*.log 2>/dev/null | tail -100 || true
+            echo
+            echo "=== Last 160 lines of build output ==="
+            tail -160 build/logs/ci-full.log 2>/dev/null || true
+            echo
+            echo "=== Last 100 lines of ANGLE output (if available) ==="
+            tail -100 build/logs/angle-build.log 2>/dev/null || true
+          } > "$REPORT"
+          # Store the latest report on a separate branch so reporting cannot retrigger builds.
+          if ! gh api "repos/${GITHUB_REPOSITORY}/git/ref/heads/build-reports" >/dev/null 2>&1; then
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/git/refs" \
+              -f ref=refs/heads/build-reports -f sha="${GITHUB_SHA}"
+          fi
+          CURRENT_SHA=$(gh api "repos/${GITHUB_REPOSITORY}/contents/build-reports/spiderman-latest.txt?ref=build-reports" --jq '.sha' 2>/dev/null || true)
+          CONTENT=$(base64 < "$REPORT" | tr -d '\n')
+          ARGS=(-f message="ci: update latest Spider-Man build failure report" -f branch=build-reports -f content="$CONTENT")
+          if [ -n "$CURRENT_SHA" ]; then ARGS+=(-f sha="$CURRENT_SHA"); fi
+          gh api -X PUT "repos/${GITHUB_REPOSITORY}/contents/build-reports/spiderman-latest.txt" "${ARGS[@]}"
+      - name: Upload failure logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Husk-Spiderman-Failure-Logs
+          path: build/logs/
+          if-no-files-found: warn
+          retention-days: 14
